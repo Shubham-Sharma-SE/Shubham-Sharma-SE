@@ -1,0 +1,49 @@
+name: Update GitHub Profile Stats
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create profile directory
+        run: mkdir -p profile
+
+      - name: Generate GitHub Statistics
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=Shubham-Sharma-SE&show_icons=true&theme=tokyonight&hide_border=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Top Languages
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=Shubham-Sharma-SE&layout=compact&langs_count=8&theme=tokyonight&hide_border=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save generated statistics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/
+
+          git commit -m "Update GitHub profile statistics" || echo "No changes to commit"
+
+          git push
