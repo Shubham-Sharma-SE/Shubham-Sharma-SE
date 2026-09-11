@@ -1,108 +1,186 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 400 200"
+     width="400"
+     height="200">
+
   <style>
-    /* Creeper walks into the scene, then disappears after the explosion */
+
+    /* =====================================================
+       MAIN CREEPER ANIMATION
+       Complete sequence repeats every 5 seconds
+       ===================================================== */
+
     #creeper {
-      animation:
-        walk 2s ease-out forwards,
-        hide 0.1s ease-in 4.3s forwards;
+      animation: walk 5s ease-in-out infinite;
     }
 
     @keyframes walk {
-      0%   { transform: translateX(-120px); }
-      100% { transform: translateX(0); }
+
+      /* Start outside the screen */
+      0% {
+        transform: translateX(-120px);
+        opacity: 1;
+      }
+
+      /* Walk into the scene */
+      40% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      /* Stay visible */
+      82% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      /* Disappear during explosion */
+      86% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+
+      /* Return to starting position */
+      100% {
+        transform: translateX(-120px);
+        opacity: 0;
+      }
     }
 
-    /* Walking legs */
+
+    /* =====================================================
+       WALKING LEGS
+       ===================================================== */
+
     #leg-left {
       transform-origin: 162px 168px;
-      animation: legL 0.3s ease-in-out 0s 7 alternate;
+      animation: legL 0.3s ease-in-out infinite alternate;
     }
 
     #leg-right {
       transform-origin: 190px 168px;
-      animation: legR 0.3s ease-in-out 0s 7 alternate;
+      animation: legR 0.3s ease-in-out 0.15s infinite alternate;
     }
 
     @keyframes legL {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(18deg); }
+
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(18deg);
+      }
+
     }
 
     @keyframes legR {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(-18deg); }
+
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(-18deg);
+      }
+
     }
 
-    /* Blink */
+
+    /* =====================================================
+       BLINK
+       ===================================================== */
+
     #eye-left,
     #eye-right {
-      animation: blink 0.15s ease-in-out 2.5s 4 alternate;
+      animation: blink 5s linear infinite;
     }
 
     @keyframes blink {
-      0%, 100% { fill: #1a1a1a; }
-      50%       { fill: #ffffff; }
+
+      /* Normal eyes */
+      0%,
+      48%,
+      52%,
+      100% {
+        fill: #1a1a1a;
+      }
+
+      /* Blink */
+      49%,
+      51% {
+        fill: #ffffff;
+      }
+
     }
 
-    /* Charging flash */
+
+    /* =====================================================
+       CHARGING FLASH
+       ===================================================== */
+
     #creeper-head {
-      animation: headFlash 0.15s ease-in-out 3.8s 3 alternate;
+      animation: headFlash 5s linear infinite;
     }
 
     #creeper-body {
-      animation: bodyFlash 0.15s ease-in-out 3.8s 3 alternate;
+      animation: bodyFlash 5s linear infinite;
     }
 
     @keyframes headFlash {
-      0%   { fill: #4a9a4a; }
-      100% { fill: #ffffff; }
+
+      /* Normal */
+      0%,
+      75% {
+        fill: #4a9a4a;
+      }
+
+      /* Flash */
+      77%,
+      79% {
+        fill: #ffffff;
+      }
+
+      /* Return to normal */
+      81%,
+      100% {
+        fill: #4a9a4a;
+      }
+
     }
 
     @keyframes bodyFlash {
-      0%   { fill: #3a7a3a; }
-      100% { fill: #ffffff; }
-    }
 
-    /* Hide creeper at explosion */
-    @keyframes hide {
-      from { opacity: 1; }
-      to   { opacity: 0; }
-    }
-
-    /* Explosion */
-    #explosion {
-      opacity: 0;
-      transform-box: fill-box;
-      transform-origin: center;
-      animation: explode 0.8s ease-out 4.3s forwards;
-    }
-
-    @keyframes explode {
-      0% {
-        opacity: 0;
-        transform: scale(0.15);
+      /* Normal */
+      0%,
+      75% {
+        fill: #3a7a3a;
       }
 
-      20% {
-        opacity: 1;
-        transform: scale(1.35);
+      /* Flash */
+      77%,
+      79% {
+        fill: #ffffff;
       }
 
-      60% {
-        opacity: 1;
-        transform: scale(1.05);
-      }
-
+      /* Return to normal */
+      81%,
       100% {
-        opacity: 0;
-        transform: scale(1.5);
+        fill: #3a7a3a;
       }
+
     }
 
-    /* SSSSS text */
+
+    /* =====================================================
+       SSSSSSS TEXT
+       ===================================================== */
+
     #ssss-text {
       opacity: 0;
-      animation: ssss 1.5s ease-in 2.8s forwards;
+
+      animation: ssss 5s linear infinite;
+
       font-family: "Courier New", monospace;
       font-weight: bold;
       font-size: 18px;
@@ -110,17 +188,85 @@
     }
 
     @keyframes ssss {
-      0%      { opacity: 0; }
-      20%, 80% { opacity: 1; }
-      100%    { opacity: 0; }
+
+      /* Hidden */
+      0%,
+      55% {
+        opacity: 0;
+      }
+
+      /* Appears */
+      57%,
+      78% {
+        opacity: 1;
+      }
+
+      /* Disappears */
+      82%,
+      100% {
+        opacity: 0;
+      }
+
     }
 
-    /* BOOM text */
-    #boom-text {
+
+    /* =====================================================
+       EXPLOSION
+       ===================================================== */
+
+    #explosion {
+
       opacity: 0;
-      animation: boom 1s ease-out 4.35s forwards;
+
       transform-box: fill-box;
       transform-origin: center;
+
+      animation: explode 5s linear infinite;
+    }
+
+    @keyframes explode {
+
+      /* Hidden before explosion */
+      0%,
+      84% {
+        opacity: 0;
+        transform: scale(0.15);
+      }
+
+      /* Explosion starts */
+      86% {
+        opacity: 1;
+        transform: scale(1.35);
+      }
+
+      /* Explosion expands */
+      90% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+
+      /* Explosion disappears */
+      100% {
+        opacity: 0;
+        transform: scale(1.5);
+      }
+
+    }
+
+
+    /* =====================================================
+       BOOM TEXT
+       ===================================================== */
+
+    #boom-text {
+
+      opacity: 0;
+
+      animation: boom 5s linear infinite;
+
+      transform-box: fill-box;
+      transform-origin: center;
+
       font-family: "Courier New", monospace;
       font-weight: bold;
       font-size: 28px;
@@ -128,127 +274,392 @@
     }
 
     @keyframes boom {
-      0% {
+
+      /* Hidden */
+      0%,
+      86% {
         opacity: 0;
         transform: scale(0.5);
       }
 
-      30% {
+      /* Appears */
+      88% {
         opacity: 1;
         transform: scale(1.3);
       }
 
-      70% {
+      /* Stays visible */
+      93% {
         opacity: 1;
         transform: scale(1);
       }
 
+      /* Disappears */
       100% {
         opacity: 0;
         transform: scale(0.8) translateY(-20px);
       }
+
     }
+
   </style>
 
-  <!-- Background -->
-  <rect width="400" height="200" rx="12" fill="#0d1117"/>
 
-  <!-- Ground -->
-  <rect x="0" y="168" width="400" height="4" fill="#1a2a1a"/>
+  <!-- =====================================================
+       BACKGROUND
+       ===================================================== -->
 
-  <!-- CREEPER -->
+  <rect
+    width="400"
+    height="200"
+    rx="12"
+    fill="#0d1117"
+  />
+
+
+  <!-- =====================================================
+       GROUND
+       ===================================================== -->
+
+  <rect
+    x="0"
+    y="168"
+    width="400"
+    height="4"
+    fill="#1a2a1a"
+  />
+
+
+  <!-- =====================================================
+       CREEPER
+       ===================================================== -->
+
   <g id="creeper">
 
-    <!-- Head -->
+    <!-- ==================== HEAD ==================== -->
+
     <g id="creeper-head">
-      <rect x="148" y="60" width="56" height="56" rx="2" fill="#4a9a4a"/>
+
+      <rect
+        x="148"
+        y="60"
+        width="56"
+        height="56"
+        rx="2"
+        fill="#4a9a4a"
+      />
 
       <!-- Pixel texture -->
-      <rect x="148" y="60" width="8" height="8" fill="#3a8a3a"/>
-      <rect x="196" y="60" width="8" height="8" fill="#3a8a3a"/>
-      <rect x="148" y="108" width="8" height="8" fill="#3a8a3a"/>
-      <rect x="196" y="108" width="8" height="8" fill="#3a8a3a"/>
-      <rect x="156" y="68" width="8" height="8" fill="#5aaa5a"/>
-      <rect x="188" y="68" width="8" height="8" fill="#5aaa5a"/>
-      <rect x="172" y="60" width="8" height="8" fill="#5aaa5a"/>
+
+      <rect
+        x="148"
+        y="60"
+        width="8"
+        height="8"
+        fill="#3a8a3a"
+      />
+
+      <rect
+        x="196"
+        y="60"
+        width="8"
+        height="8"
+        fill="#3a8a3a"
+      />
+
+      <rect
+        x="148"
+        y="108"
+        width="8"
+        height="8"
+        fill="#3a8a3a"
+      />
+
+      <rect
+        x="196"
+        y="108"
+        width="8"
+        height="8"
+        fill="#3a8a3a"
+      />
+
+      <rect
+        x="156"
+        y="68"
+        width="8"
+        height="8"
+        fill="#5aaa5a"
+      />
+
+      <rect
+        x="188"
+        y="68"
+        width="8"
+        height="8"
+        fill="#5aaa5a"
+      />
+
+      <rect
+        x="172"
+        y="60"
+        width="8"
+        height="8"
+        fill="#5aaa5a"
+      />
+
     </g>
 
-    <!-- Eyes -->
-    <rect id="eye-left"
-          x="156" y="76"
-          width="14" height="14"
-          fill="#1a1a1a"/>
 
-    <rect id="eye-right"
-          x="182" y="76"
-          width="14" height="14"
-          fill="#1a1a1a"/>
+    <!-- ==================== EYES ==================== -->
 
-    <!-- Mouth -->
-    <rect x="164" y="96" width="6" height="6" fill="#1a1a1a"/>
-    <rect x="182" y="96" width="6" height="6" fill="#1a1a1a"/>
-    <rect x="170" y="102" width="12" height="6" fill="#1a1a1a"/>
+    <rect
+      id="eye-left"
+      x="156"
+      y="76"
+      width="14"
+      height="14"
+      fill="#1a1a1a"
+    />
 
-    <!-- Neck -->
-    <rect x="160" y="116" width="32" height="8" fill="#3a7a3a"/>
+    <rect
+      id="eye-right"
+      x="182"
+      y="76"
+      width="14"
+      height="14"
+      fill="#1a1a1a"
+    />
 
-    <!-- Body -->
+
+    <!-- ==================== MOUTH ==================== -->
+
+    <rect
+      x="164"
+      y="96"
+      width="6"
+      height="6"
+      fill="#1a1a1a"
+    />
+
+    <rect
+      x="182"
+      y="96"
+      width="6"
+      height="6"
+      fill="#1a1a1a"
+    />
+
+    <rect
+      x="170"
+      y="102"
+      width="12"
+      height="6"
+      fill="#1a1a1a"
+    />
+
+
+    <!-- ==================== NECK ==================== -->
+
+    <rect
+      x="160"
+      y="116"
+      width="32"
+      height="8"
+      fill="#3a7a3a"
+    />
+
+
+    <!-- ==================== BODY ==================== -->
+
     <g id="creeper-body">
-      <rect x="148" y="124" width="56" height="44" rx="2" fill="#3a7a3a"/>
+
+      <rect
+        x="148"
+        y="124"
+        width="56"
+        height="44"
+        rx="2"
+        fill="#3a7a3a"
+      />
 
       <!-- Body texture -->
-      <rect x="156" y="128" width="8" height="8" fill="#4a8a4a"/>
-      <rect x="188" y="128" width="8" height="8" fill="#2a6a2a"/>
-      <rect x="172" y="136" width="8" height="8" fill="#4a8a4a"/>
-      <rect x="156" y="152" width="8" height="8" fill="#2a6a2a"/>
-      <rect x="188" y="152" width="8" height="8" fill="#4a8a4a"/>
+
+      <rect
+        x="156"
+        y="128"
+        width="8"
+        height="8"
+        fill="#4a8a4a"
+      />
+
+      <rect
+        x="188"
+        y="128"
+        width="8"
+        height="8"
+        fill="#2a6a2a"
+      />
+
+      <rect
+        x="172"
+        y="136"
+        width="8"
+        height="8"
+        fill="#4a8a4a"
+      />
+
+      <rect
+        x="156"
+        y="152"
+        width="8"
+        height="8"
+        fill="#2a6a2a"
+      />
+
+      <rect
+        x="188"
+        y="152"
+        width="8"
+        height="8"
+        fill="#4a8a4a"
+      />
+
     </g>
 
-    <!-- Left leg -->
+
+    <!-- ==================== LEFT LEG ==================== -->
+
     <g id="leg-left">
-      <rect x="152" y="168" width="20" height="20" fill="#3a7a3a"/>
+
+      <rect
+        x="152"
+        y="168"
+        width="20"
+        height="20"
+        fill="#3a7a3a"
+      />
+
     </g>
 
-    <!-- Right leg -->
+
+    <!-- ==================== RIGHT LEG ==================== -->
+
     <g id="leg-right">
-      <rect x="180" y="168" width="20" height="20" fill="#3a7a3a"/>
+
+      <rect
+        x="180"
+        y="168"
+        width="20"
+        height="20"
+        fill="#3a7a3a"
+      />
+
     </g>
 
   </g>
 
-  <!-- Charging sound -->
-  <text id="ssss-text"
-        x="176"
-        y="50"
-        text-anchor="middle">
+
+  <!-- =====================================================
+       CHARGING SOUND
+       ===================================================== -->
+
+  <text
+    id="ssss-text"
+    x="176"
+    y="50"
+    text-anchor="middle"
+  >
     SSSSSS...
   </text>
 
-  <!-- Explosion -->
+
+  <!-- =====================================================
+       EXPLOSION
+       ===================================================== -->
+
   <g id="explosion">
 
-    <circle cx="176" cy="120" r="45" fill="#ff8800"/>
-    <circle cx="176" cy="120" r="32" fill="#ffcc00"/>
-    <circle cx="176" cy="120" r="18" fill="#ffffff"/>
+    <!-- Main explosion -->
+
+    <circle
+      cx="176"
+      cy="120"
+      r="45"
+      fill="#ff8800"
+    />
+
+    <circle
+      cx="176"
+      cy="120"
+      r="32"
+      fill="#ffcc00"
+    />
+
+    <circle
+      cx="176"
+      cy="120"
+      r="18"
+      fill="#ffffff"
+    />
+
 
     <!-- Explosion shards -->
-    <polygon points="176,60 185,85 167,85" fill="#ff4400"/>
-    <polygon points="230,100 205,115 210,95" fill="#ff6600"/>
-    <polygon points="122,100 147,115 142,95" fill="#ff4400"/>
-    <polygon points="176,180 185,155 167,155" fill="#ff6600"/>
-    <polygon points="220,60 205,85 220,90" fill="#ffaa00"/>
-    <polygon points="132,60 147,85 132,90" fill="#ff4400"/>
-    <polygon points="230,165 210,145 225,140" fill="#ffaa00"/>
-    <polygon points="122,165 142,145 127,140" fill="#ff6600"/>
+
+    <polygon
+      points="176,60 185,85 167,85"
+      fill="#ff4400"
+    />
+
+    <polygon
+      points="230,100 205,115 210,95"
+      fill="#ff6600"
+    />
+
+    <polygon
+      points="122,100 147,115 142,95"
+      fill="#ff4400"
+    />
+
+    <polygon
+      points="176,180 185,155 167,155"
+      fill="#ff6600"
+    />
+
+    <polygon
+      points="220,60 205,85 220,90"
+      fill="#ffaa00"
+    />
+
+    <polygon
+      points="132,60 147,85 132,90"
+      fill="#ff4400"
+    />
+
+    <polygon
+      points="230,165 210,145 225,140"
+      fill="#ffaa00"
+    />
+
+    <polygon
+      points="122,165 142,145 127,140"
+      fill="#ff6600"
+    />
 
   </g>
 
-  <!-- BOOM -->
-  <text id="boom-text"
-        x="176"
-        y="130"
-        text-anchor="middle">
+
+  <!-- =====================================================
+       BOOM
+       ===================================================== -->
+
+  <text
+    id="boom-text"
+    x="176"
+    y="130"
+    text-anchor="middle"
+  >
     BOOM!
   </text>
+
 
 </svg>
