@@ -1,0 +1,24 @@
+name: Update Recent Activity in README
+
+# Runs whenever:
+#  - you push to ANY repo (new upload counts as a push)
+#  - a new repository is created under your account
+#  - once a day on a schedule (catches things the above might miss)
+#  - manually, via the "Run workflow" button
+on:
+  push:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Update Recent Activity section
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
