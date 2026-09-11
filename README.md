@@ -69,6 +69,8 @@
 </p>
 
 <!-- ===================== GITHUB STATISTICS ===================== -->
+<!-- These are LIVE images — they always reflect your current stats.
+     Nothing to automate here, they update on every profile view. -->
 
 ## 📊 GitHub Statistics
 
@@ -86,6 +88,7 @@
     height="180"
     alt="GitHub Statistics"
   />
+</p>
 
 <p align="center">
   <img
@@ -106,7 +109,7 @@
   />
 </p>
 
-<!-- ===================== ACTIVITY GRAPH ===================== -->
+<!-- ===================== ACTIVITY GRAPH (LIVE) ===================== -->
 
 ## 📈 GitHub Activity
 
@@ -117,6 +120,16 @@
     alt="Shubham's Native Contribution Graph" 
   />
 </p>
+
+<!-- ===================== RECENT ACTIVITY (AUTO-UPDATED BY WORKFLOW) ===================== -->
+<!-- Do not edit the block below by hand — the update-readme.yml workflow
+     rewrites everything between the START/END markers automatically
+     whenever you push code or create/upload a repository. -->
+
+## 🕒 Recent Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 <!-- ===================== CONTRIBUTION GRAPH ===================== -->
 
