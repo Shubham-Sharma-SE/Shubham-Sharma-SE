@@ -90,14 +90,6 @@
   />
 </p>
 
-<p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shubham-Sharma-SE&theme=github_dark"
-    height="180"
-    alt="Repositories per Language"
-  />
-</p>
-
 <!-- ===================== GITHUB STREAK ===================== -->
 
 ## 🔥 GitHub Streak
