@@ -113,15 +113,11 @@
   />
 </p>
 
-<!-- ===================== RECENT ACTIVITY (AUTO-UPDATED BY WORKFLOW) ===================== -->
-<!-- Do not edit the block below by hand — the update-readme.yml workflow
-     rewrites everything between the START/END markers automatically
-     whenever you push code or create/upload a repository. -->
+<!-- ===================== RECENT ACTIVITY ===================== -->
 
 ## 🕒 Recent Activity
 
-<!--START_SECTION:activity-->
-<!--END_SECTION:activity-->
+- Recent activity automation has been removed.
 
 <!-- ===================== CONTRIBUTION GRAPH ===================== -->
 
