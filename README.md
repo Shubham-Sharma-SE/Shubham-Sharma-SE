@@ -76,7 +76,7 @@
 
 <p align="center">
   <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Shubham-Sharma-SE&theme=github-dark&hide_border=true&area=true&custom_title=GitHub%20Activity%20Graph"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-Sharma-SE&theme=github_dark"
     alt="GitHub Profile Statistics"
     width="95%"
   />
@@ -84,9 +84,17 @@
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api?username=Shubham-Sharma-SE&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=1800"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-Sharma-SE&theme=github_dark"
     height="180"
     alt="GitHub Statistics"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shubham-Sharma-SE&theme=github_dark"
+    height="180"
+    alt="Repositories per Language"
   />
 </p>
 
@@ -96,7 +104,7 @@
 
 <p align="center">
   <img
-    src="https://streak-stats.demolab.com/?user=Shubham-Sharma-SE&theme=tokyonight&hide_border=true&cache_seconds=1800"
+    src="https://streak-stats.demolab.com/?user=Shubham-Sharma-SE&theme=tokyonight&hide_border=true"
     alt="GitHub streak statistics"
   />
 </p>
@@ -107,17 +115,21 @@
 
 <p align="center">
   <img 
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Shubham-Sharma-SE&theme=github-dark&hide_border=true&area=true&custom_title=Recent%20Contribution%20Activity"
+    src="https://ghchart.rshah.org/00E5A0/Shubham-Sharma-SE" 
     width="95%" 
     alt="Shubham's Native Contribution Graph" 
   />
 </p>
 
-<!-- ===================== RECENT ACTIVITY ===================== -->
+<!-- ===================== RECENT ACTIVITY (AUTO-UPDATED BY WORKFLOW) ===================== -->
+<!-- Do not edit the block below by hand — the update-readme.yml workflow
+     rewrites everything between the START/END markers automatically
+     whenever you push code or create/upload a repository. -->
 
 ## 🕒 Recent Activity
 
-- Recent activity automation has been removed.
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 <!-- ===================== CONTRIBUTION GRAPH ===================== -->
 
@@ -125,7 +137,7 @@
 
 <p align="center">
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shubham-Sharma-SE&layout=compact&theme=github_dark&hide_border=true&cache_seconds=1800"
+    src="https://ghchart.rshah.org/00e5a0/Shubham-Sharma-SE"
     alt="GitHub Contribution Chart"
     width="95%"
   />
