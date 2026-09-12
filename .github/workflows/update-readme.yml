@@ -1,0 +1,18 @@
+name: Update Recent Activity in README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # runs once every day at 00:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Update Recent Activity section
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
