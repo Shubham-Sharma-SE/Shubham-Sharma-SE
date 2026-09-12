@@ -76,7 +76,7 @@
 
 <p align="center">
   <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shubham-Sharma-SE&theme=github_dark"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Shubham-Sharma-SE&theme=github-dark&hide_border=true&area=true&custom_title=GitHub%20Activity%20Graph"
     alt="GitHub Profile Statistics"
     width="95%"
   />
@@ -84,7 +84,7 @@
 
 <p align="center">
   <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-Sharma-SE&theme=github_dark"
+    src="https://github-readme-stats.vercel.app/api?username=Shubham-Sharma-SE&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&cache_seconds=1800"
     height="180"
     alt="GitHub Statistics"
   />
@@ -96,7 +96,7 @@
 
 <p align="center">
   <img
-    src="https://streak-stats.demolab.com/?user=Shubham-Sharma-SE&theme=tokyonight&hide_border=true"
+    src="https://streak-stats.demolab.com/?user=Shubham-Sharma-SE&theme=tokyonight&hide_border=true&cache_seconds=1800"
     alt="GitHub streak statistics"
   />
 </p>
@@ -107,7 +107,7 @@
 
 <p align="center">
   <img 
-    src="https://ghchart.rshah.org/00E5A0/Shubham-Sharma-SE" 
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Shubham-Sharma-SE&theme=github-dark&hide_border=true&area=true&custom_title=Recent%20Contribution%20Activity"
     width="95%" 
     alt="Shubham's Native Contribution Graph" 
   />
@@ -129,7 +129,7 @@
 
 <p align="center">
   <img
-    src="https://ghchart.rshah.org/00e5a0/Shubham-Sharma-SE"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shubham-Sharma-SE&layout=compact&theme=github_dark&hide_border=true&cache_seconds=1800"
     alt="GitHub Contribution Chart"
     width="95%"
   />

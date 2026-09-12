@@ -1,14 +1,23 @@
 name: Update Recent Activity in README
 
-# Runs whenever:
-#  - you push to ANY repo (new upload counts as a push)
-#  - a new repository is created under your account
-#  - once a day on a schedule (catches things the above might miss)
-#  - manually, via the "Run workflow" button
 on:
   push:
+    branches:
+      - main
+  create:
+  delete:
+  issues:
+  issue_comment:
+  pull_request:
+  pull_request_review:
+  pull_request_review_comment:
+  release:
+    types: [published]
+  watch:
+    types: [started]
+  fork:
   schedule:
-    - cron: '0 */6 * * *'   # every 6 hours
+    - cron: '*/30 * * * *'   # every 30 minutes
   workflow_dispatch:
 
 jobs:
