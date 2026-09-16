@@ -8,6 +8,8 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout profile repo
         uses: actions/checkout@v4
@@ -15,4 +17,4 @@ jobs:
       - name: Update Recent Activity section
         uses: jamesgeorge007/github-activity-readme@master
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
