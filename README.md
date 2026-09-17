@@ -191,9 +191,7 @@
 - Data Structures and Algorithms
 - Advanced JavaScript
 - Web Development
-- Internet of Things
 - Artificial Intelligence
-- Cybersecurity
 
 <!-- ===================== PROJECTS ===================== -->
 
@@ -224,7 +222,7 @@ An interactive website for college clubs with club information, committee detail
 | Category | Details |
 |---|---|
 | 👨‍💻 Role | Student Developer |
-| 🌱 Learning | Web Development, IoT, AI, Cybersecurity |
+| 🌱 Learning | Web Development, AI |
 | 💡 Interests | Software Projects and Problem Solving |
 | 🛠️ Tools | HTML, CSS, JavaScript, C, C++, Python, Git |
 | 🚀 Goal | Build useful and innovative projects |
