@@ -1,0 +1,35 @@
+name: Update Streak Stats SVG
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'   # every 30 minutes
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-streak:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      - name: Fetch latest streak stats SVG
+        run: |
+          curl -sL "https://streak-stats.demolab.com/?user=Shubham-Sharma-SE&theme=tokyonight&hide_border=true" -o streak-stats.svg
+
+      - name: Verify SVG was downloaded correctly
+        run: |
+          if ! grep -q "<svg" streak-stats.svg; then
+            echo "Fetched file is not a valid SVG — aborting to avoid committing a broken/rate-limited response"
+            exit 1
+          fi
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add streak-stats.svg
+          git diff --staged --quiet || git commit -m ":zap: Update streak stats SVG"
+          git push
