@@ -131,18 +131,6 @@
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
-<!-- ===================== CONTRIBUTION GRAPH ===================== -->
-
-## 🟩 Contribution Overview
-
-<p align="center">
-  <img
-    src="https://ghchart.rshah.org/00e5a0/Shubham-Sharma-SE"
-    alt="GitHub Contribution Chart"
-    width="95%"
-  />
-</p>
-
 <!-- ===================== GITHUB ACHIEVEMENTS ===================== -->
 
 ## 🏆 GitHub Achievements
