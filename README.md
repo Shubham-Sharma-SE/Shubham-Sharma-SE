@@ -181,30 +181,6 @@
 - Web Development
 - Artificial Intelligence
 
-<!-- ===================== PROJECTS ===================== -->
-
-## 🚀 Featured Projects
-
-### 🔐 DPDP Privacy Policy Verifier
-
-A browser extension that checks privacy policies according to DPDP-related requirements and presents the results in a simple format.
-
-**Main Features:**
-
-- DPDP Compliance Checker
-- Privacy Nutrition Label
-- Questions You Should Ask
-
-### 🤖 Daksha AI
-
-An AI-based citizen complaint verification system that uses before-and-after images, AI checks, and real-time dashboard updates.
-
-### 🌐 VIT Clubs Website
-
-An interactive website for college clubs with club information, committee details, success stories, validation, and background video.
-
-<!-- ===================== GITHUB PROFILE SUMMARY ===================== -->
-
 ## 📌 Profile Summary
 
 | Category | Details |
