@@ -9,13 +9,6 @@
   />
 </p>
 
-<p align="center">
-  <img
-    src="https://komarev.com/ghpvc/?username=Shubham-Sharma-SE&label=Profile%20Views&color=00e5a0&style=flat"
-    alt="Profile views"
-  />
-</p>
-
 <!-- ===================== CREEPER ANIMATION ===================== -->
 
 <p align="center">
