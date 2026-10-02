@@ -23,7 +23,7 @@
 
 ##  About Me
 
-- 🎓 I am a student interested in software development and emerging technologies.
+-  I am a student interested in software development and emerging technologies.
 -  I enjoy building websites, applications, and practical projects.
 -  Currently learning new programming concepts and development tools.
 -  Interested in Web Development, IoT, AI, and Cybersecurity.
