@@ -21,18 +21,18 @@
 
 <!-- ===================== ABOUT ME ===================== -->
 
-## 👨‍💻 About Me
+##  About Me
 
 - 🎓 I am a student interested in software development and emerging technologies.
-- 💻 I enjoy building websites, applications, and practical projects.
-- 🌱 Currently learning new programming concepts and development tools.
-- 🚀 Interested in Web Development, IoT, AI, and Cybersecurity.
-- 📚 Always improving my coding and problem-solving skills.
-- ⚡ Fun fact: I enjoy turning ideas into working projects.
+-  I enjoy building websites, applications, and practical projects.
+-  Currently learning new programming concepts and development tools.
+-  Interested in Web Development, IoT, AI, and Cybersecurity.
+-  Always improving my coding and problem-solving skills.
+-  Fun fact: I enjoy turning ideas into working projects.
 
 <!-- ===================== TECH STACK ===================== -->
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Programming Languages
 
@@ -65,7 +65,7 @@
 <!-- These are LIVE images — they always reflect your current stats.
      Nothing to automate here, they update on every profile view. -->
 
-## 📊 GitHub Statistics
+##  GitHub Statistics
 
 <p align="center">
   <img
@@ -93,7 +93,7 @@
 
 <!-- ===================== GITHUB STREAK ===================== -->
 
-## 🔥 GitHub Streak
+##  GitHub Streak
 
 <p align="center">
   <img
@@ -104,7 +104,7 @@
 
 <!-- ===================== ACTIVITY GRAPH (LIVE) ===================== -->
 
-## 📈 GitHub Activity
+##  GitHub Activity
 
 <p align="center">
   <img 
@@ -119,14 +119,14 @@
      rewrites everything between the START/END markers automatically
      whenever you push code or create/upload a repository. -->
 
-## 🕒 Recent Activity
+##  Recent Activity
 
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
 <!-- ===================== GITHUB ACHIEVEMENTS ===================== -->
 
-## 🏆 GitHub Achievements
+##  GitHub Achievements
 
 <p align="center">
 
@@ -140,9 +140,9 @@
 </p>
 
 <p align="center">
-  🏆 Achievements &nbsp; • &nbsp;
-  📊 Contributions &nbsp; • &nbsp;
-  🚀 Open Source
+   Achievements &nbsp; • &nbsp;
+   Contributions &nbsp; • &nbsp;
+   Open Source
 </p>
 
 <!-- ===================== GITHUB PROFILE LINKS ===================== -->
@@ -167,26 +167,26 @@
 
 <!-- ===================== CURRENTLY LEARNING ===================== -->
 
-## 🌱 Currently Learning
+##  Currently Learning
 
 - Data Structures and Algorithms
 - Advanced JavaScript
 - Web Development
 - Artificial Intelligence
 
-## 📌 Profile Summary
+##  Profile Summary
 
 | Category | Details |
 |---|---|
-| 👨‍💻 Role | Student Developer |
-| 🌱 Learning | Web Development, AI |
-| 💡 Interests | Software Projects and Problem Solving |
-| 🛠️ Tools | HTML, CSS, JavaScript, C, C++, Python, Git |
-| 🚀 Goal | Build useful and innovative projects |
+| Role | Student Developer |
+| Learning | Web Development, AI |
+| Interests | Software Projects and Problem Solving |
+| Tools | HTML, CSS, JavaScript, C, C++, Python, Git |
+| Goal | Build useful and innovative projects |
 
 <!-- ===================== CONNECT ===================== -->
 
-## 🤝 Connect With Me
+##  Connect With Me
 
 <p align="center">
 
@@ -216,9 +216,7 @@
 <!-- ===================== FOOTER ===================== -->
 
 <p align="center">
-  <b>Thanks for visiting my profile! ⭐</b>
+  <b>Thanks for visiting my profile! </b>
 </p>
 
-<p align="center">
-  Made with ❤️ by Shubham Sharma
-</p>
+
