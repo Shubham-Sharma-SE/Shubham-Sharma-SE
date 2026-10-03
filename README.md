@@ -16,9 +16,8 @@
 -  I am a student interested in software development and emerging technologies.
 -  I enjoy building websites, applications, and practical projects.
 -  Currently learning new programming concepts and development tools.
--  Interested in Web Development, IoT, AI, and Cybersecurity.
+-  Interested in Web Development,and AI still exploring much more
 -  Always improving my coding and problem-solving skills.
--  Fun fact: I enjoy turning ideas into working projects.
 
 <!-- ===================== TECH STACK ===================== -->
 
