@@ -9,16 +9,6 @@
   />
 </p>
 
-<!-- ===================== CREEPER ANIMATION ===================== -->
-
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/Shubham-Sharma-SE/Shubham-Sharma-SE/main/creeper.svg"
-    width="300"
-    alt="Animated Minecraft Creeper"
-  />
-</p>
-
 <!-- ===================== ABOUT ME ===================== -->
 
 ##  About Me
