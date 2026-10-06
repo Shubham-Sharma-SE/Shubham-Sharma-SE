@@ -113,27 +113,6 @@
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
-<!-- ===================== GITHUB ACHIEVEMENTS ===================== -->
-
-##  GitHub Achievements
-
-<p align="center">
-
-  <a href="https://github.com/Shubham-Sharma-SE?tab=achievements">
-    <img
-      src="https://img.shields.io/badge/🏆%20GitHub%20Achievements-View%20Achievements-00E5A0?style=for-the-badge&logo=github&logoColor=white"
-      alt="GitHub Achievements"
-    />
-  </a>
-
-</p>
-
-<p align="center">
-   Achievements &nbsp; • &nbsp;
-   Contributions &nbsp; • &nbsp;
-   Open Source
-</p>
-
 <!-- ===================== GITHUB PROFILE LINKS ===================== -->
 
 <p align="center">
