@@ -73,11 +73,7 @@
 </p>
 
 <p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shubham-Sharma-SE&theme=github_dark"
-    height="180"
-    alt="Repositories per Language"
-  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shubham-Sharma-SE&layout=compact&theme=tokyonight&hide_border=true" height="180"/>
 </p>
 
 <!-- ===================== GITHUB STREAK ===================== -->
