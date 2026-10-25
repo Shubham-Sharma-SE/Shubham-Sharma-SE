@@ -4,7 +4,7 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00E5A0&center=true&vCenter=true&width=650&lines=Developer+%7C+Builder+%7C+Learner;Always+Learning.+Always+Building.;Welcome+to+my+GitHub+profile!"
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00E5A0&center=true&vCenter=true&width=650&lines=Developer+%7C+Builder+;Welcome+to+my+GitHub+profile!"
     alt="Typing animation"
   />
 </p>
@@ -13,12 +13,10 @@
 
 ##  About Me
 
--  I am a student interested in software development and emerging technologies.
+-  I am 19 yrs old student interested in software development and emerging technologies.
 -  I enjoy building websites, applications, and practical projects.
--  Currently learning new programming concepts and development tools.
--  Interested in Web Development,and AI still exploring much more
--  Always improving my coding and problem-solving skills.
-
+-  Currently focusing on new development topics.
+-  Interested in new technologies 
 <!-- ===================== TECH STACK ===================== -->
 
 ##  Tech Stack
@@ -45,7 +43,7 @@
 
 <p>
   <img
-    src="https://skillicons.dev/icons?i=git,github,vscode,arduino"
+    src="https://skillicons.dev/icons?i=git,github,vscode,mysql,"
     alt="Tools and technologies"
   />
 </p>
@@ -128,25 +126,6 @@
   </a>
 
 </p>
-
-<!-- ===================== CURRENTLY LEARNING ===================== -->
-
-##  Currently Learning
-
-- Data Structures and Algorithms
-- Advanced JavaScript
-- Web Development
-- Artificial Intelligence
-
-##  Profile Summary
-
-| Category | Details |
-|---|---|
-| Role | Student Developer |
-| Learning | Web Development, AI |
-| Interests | Software Projects and Problem Solving |
-| Tools | HTML, CSS, JavaScript, C, C++, Python, Git |
-| Goal | Build useful and innovative projects |
 
 <!-- ===================== CONNECT ===================== -->
 
