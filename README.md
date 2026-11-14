@@ -62,45 +62,6 @@
   />
 </p>
 
-<p align="center">
-  <img
-    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shubham-Sharma-SE&theme=github_dark"
-    height="180"
-    alt="GitHub Statistics"
-  />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shubham-Sharma-SE&layout=compact&theme=tokyonight&hide_border=true" height="180"/>
-</p>
-
-<!-- ===================== GITHUB STREAK ===================== -->
-
-##  GitHub Streak
-
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com/?user=Shubham-Sharma-SE&theme=tokyonight&hide_border=true"
-    alt="GitHub streak statistics"
-  />
-</p>
-
-<!-- ===================== ACTIVITY GRAPH (LIVE) ===================== -->
-
-##  GitHub Activity
-
-<p align="center">
-  <img 
-    src="https://ghchart.rshah.org/00E5A0/Shubham-Sharma-SE" 
-    width="95%" 
-    alt="Shubham's Native Contribution Graph" 
-  />
-</p>
-
-<!-- ===================== RECENT ACTIVITY (AUTO-UPDATED BY WORKFLOW) ===================== -->
-<!-- Do not edit the block below by hand — the update-readme.yml workflow
-     rewrites everything between the START/END markers automatically
-     whenever you push code or create/upload a repository. -->
 
 ##  Recent Activity
 
